@@ -15,4 +15,8 @@ describe('MoviesController', () => {
   it('should be defined', () => {
     expect(controller).toBeDefined();
   });
+
+  it('should be 4', () => {
+    expect(2 + 1).toEqual(4);
+  });
 });
