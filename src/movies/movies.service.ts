@@ -17,4 +17,11 @@ export class MoviesService {
     this.movies.filter((movie) => movie.id !== parseInt(id));
     return true;
   }
+
+  create(movieData) {
+    return this.movies.push({
+      id: this.movies.length + 1,
+      ...movieData,
+    });
+  }
 }
